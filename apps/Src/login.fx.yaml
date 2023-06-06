@@ -55,15 +55,9 @@ login As screen:
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: |-
             =If(
-                TextInput3.Text = "xx",
-                Navigate(
-                    'Teacher',
-                    ScreenTransition.None
-                ),
-                Notify(
-                    "Invalid Password!!! Please Enter a Valid Password",
-                    NotificationType.Error
-                )
+                !IsBlank(LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)),
+                Navigate('Teacher', ScreenTransition.None, { teacherID: TextInput2.Text }),
+                Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
             )
         Size: =24
         Text: ="login"
