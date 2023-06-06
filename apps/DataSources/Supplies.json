@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c0_supplieses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c0_supplies",
+    "Name": "Supplies",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c0_name": "name",
+      "cr0c0_sid": "s-id",
+      "cr0c0_supplies_AsyncOperations": "System Jobs",
+      "cr0c0_supplies_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c0_supplies_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c0_supplies_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c0_supplies_ProcessSession": "Process Sessions",
+      "cr0c0_supplies_SyncErrors": "Sync Errors",
+      "cr0c0_suppliesid": "Supplies",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Supplies",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Supplies (Views)",
+    "Name": "_cr0c0_supplies_views",
+    "RelatedEntityName": "Supplies",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "39223a38-3276-42dd-bd65-caa926a92779": "Inactive Supplies",
+      "4d39de7e-3a4a-4c6d-831e-23c8035cb894": "Supplies Lookup View",
+      "7d993f4c-868d-4bd5-bb51-b5ab5136e2b0": "Supplies Advanced Find View",
+      "7f2fd0da-7c8f-426b-8224-83fa7a3512ee": "Active Supplies",
+      "e973ab9d-c654-43f8-abed-f9de2ec2a6fe": "Supplies Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Supplies)",
+    "Name": "cr0c0_supplies_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Supplies"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Supplies",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Supplies)",
+    "Name": "cr0c0_supplies_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Supplies"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Supplies",
+    "Type": "OptionSetInfo"
+  }
+]

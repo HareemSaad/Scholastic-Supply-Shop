@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c0_teacherses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c0_teachers",
+    "Name": "Teachers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c0_name": "name",
+      "cr0c0_teachers_AsyncOperations": "System Jobs",
+      "cr0c0_teachers_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c0_teachers_DuplicateBaseRecord": "Duplicate Records (cr0c0_teachers_DuplicateBaseRecord)",
+      "cr0c0_teachers_DuplicateMatchingRecord": "Duplicate Records (cr0c0_teachers_DuplicateMatchingRecord)",
+      "cr0c0_teachers_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c0_teachers_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c0_teachers_ProcessSession": "Process Sessions",
+      "cr0c0_teachers_SyncErrors": "Sync Errors",
+      "cr0c0_teachersid": "Teachers",
+      "cr0c0_tid": "t-id",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "emailaddress": "Email Address",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Teachers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Teachers (Views)",
+    "Name": "_cr0c0_teachers_views",
+    "RelatedEntityName": "Teachers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "10da5c7c-8925-483a-b187-2e8468cf4a7a": "Active Teachers",
+      "3c48cac7-cf47-4dcd-b9bb-8385bf096a49": "Teachers Lookup View",
+      "4dd9c94a-dc90-4e19-96ae-7e8041f4a7ba": "Teachers Associated View",
+      "65b1f9ef-0b25-4caa-be76-64251146daa9": "Inactive Teachers",
+      "e8c08091-04be-4767-a1cd-1af2da402e7e": "Teachers Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Teachers)",
+    "Name": "cr0c0_teachers_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Teachers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Teachers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Teachers)",
+    "Name": "cr0c0_teachers_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Teachers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Teachers",
+    "Type": "OptionSetInfo"
+  }
+]
