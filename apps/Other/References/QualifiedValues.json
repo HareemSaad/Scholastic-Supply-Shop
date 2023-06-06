@@ -1,0 +1,23 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr0c0_teachers_forms",
+      "Namespace": "Teachers (Forms)",
+      "Values": {
+        "Information": "2dbea605-f6cd-413d-90cd-fa705fa624e8"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c0_supplies_forms",
+      "Namespace": "Supplies (Forms)",
+      "Values": {
+        "Information": "5d9cb5d0-3e4b-4259-9798-c2268f9f5ca8"
+      }
+    },
+    {
+      "Kind": "default.cds_msdyn_suggestedactivity_forms",
+      "Namespace": "Activity Suggestions (Forms)",
+      "Values": {}
+    }
+  ]
+}
