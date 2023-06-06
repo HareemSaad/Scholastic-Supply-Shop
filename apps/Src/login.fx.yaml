@@ -56,7 +56,7 @@ login As screen:
         OnSelect: |-
             =If(
                 !IsBlank(LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)),
-                Navigate('Teacher', ScreenTransition.None, { teacherID: TextInput2.Text }),
+                Navigate(Teacher, ScreenTransition.None, { teacherID: TextInput2.Text }),
                 Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
             )
         Size: =24
