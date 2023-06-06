@@ -130,6 +130,7 @@
   "ScreenOrder": [
     "Teacher",
     "Screen1",
-    "Admin"
+    "Admin",
+    "login"
   ]
 }
