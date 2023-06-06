@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 5,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -128,9 +128,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "login",
     "Teacher",
     "Screen1",
-    "Admin",
-    "login"
+    "Admin"
   ]
 }
