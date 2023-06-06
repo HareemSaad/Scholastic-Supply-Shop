@@ -1,6 +1,11 @@
 Teacher As screen:
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
+    OnVisible: |-
+        =Set(
+            supply,
+            LookUp('Supplies', name = Dropdown1.SelectedText.Value)
+        )
 
     Label1 As label:
         BorderColor: =RGBA(69, 186, 184, 1)
@@ -99,12 +104,9 @@ Teacher As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
-        OnSelect: |-
+        OnSelect: |
             =If(
-                Set(
-                    supply,
-                    LookUp('Supplies', name = Dropdown1.SelectedText.Value)
-                ),
+                !IsBlank(supply) && Slider1.Value <= Value(supply.quantity),
                 Navigate('success request', ScreenTransition.None),
                 Navigate('failed request', ScreenTransition.None)
             )

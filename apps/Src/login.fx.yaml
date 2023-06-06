@@ -38,6 +38,7 @@ login As screen:
         HoverBorderColor: =RGBA(69, 186, 184, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(16, 65, 71, 1)
+        Mode: =TextMode.Password
         Size: =21
         Width: =470
         X: =76
