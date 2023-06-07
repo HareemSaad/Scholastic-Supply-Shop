@@ -15,16 +15,16 @@
       }
     },
     {
-      "Kind": "default.cds_msdyn_suggestedactivity_forms",
-      "Namespace": "Activity Suggestions (Forms)",
-      "Values": {}
-    },
-    {
       "Kind": "default.cds_cr0c0_admin_forms",
       "Namespace": "Admins (Forms)",
       "Values": {
         "Information": "b8c1584f-b707-4a80-af7b-fa39b4b5042f"
       }
+    },
+    {
+      "Kind": "default.cds_msdyn_suggestedactivity_forms",
+      "Namespace": "Activity Suggestions (Forms)",
+      "Values": {}
     }
   ]
 }
