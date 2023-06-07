@@ -54,16 +54,59 @@ login As screen:
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
-        OnSelect: |-
+        OnSelect: |
             =If(
-                !IsBlank(LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)),
-                Navigate(Teacher, ScreenTransition.None, { teacherID: TextInput2.Text }),
-                Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
+                Toggle1.Value,
+                Set(
+                    adminLookup,
+                    LookUp(Admins, aid = TextInput2.Text && password = TextInput3.Text)
+                );
+                If(
+                    !IsBlank(adminLookup),
+                    Navigate(Admin, ScreenTransition.None, { adminRecord: adminLookup }),
+                    Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
+                ),
+                Set(
+                    teacherLookup,
+                    LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)
+                );
+                If(
+                    !IsBlank(teacherLookup),
+                    Navigate(Teacher, ScreenTransition.None, { teacherRecord: teacherLookup }),
+                    Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
+                )
             )
         Size: =24
         Text: ="login"
         Width: =280
-        X: =196
-        Y: =672
+        X: =171
+        Y: =778
         ZIndex: =3
+
+    Toggle1 As toggleSwitch:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        FalseFill: =RGBA(128, 130, 133, 1)
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =49
+        ShowLabel: =false
+        Size: =21
+        TextPosition: =TextPosition.Left
+        TrueFill: =RGBA(3, 121, 137, 1)
+        Width: =90
+        X: =456
+        Y: =605
+        ZIndex: =4
+
+    Label5 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: ="Are you an admin?"
+        Width: =296
+        X: =80
+        Y: =595
+        ZIndex: =5
 
