@@ -57,14 +57,22 @@ login As screen:
         OnSelect: |
             =If(
                 Toggle1.Value,
+                Set(
+                    adminLookup,
+                    LookUp(Admins, aid = TextInput2.Text && password = TextInput3.Text)
+                );
                 If(
-                    !IsBlank(LookUp(Admins, aid = TextInput2.Text && password = TextInput3.Text)),
-                    Navigate(Admin, ScreenTransition.None, { adminID: TextInput2.Text }),
+                    !IsBlank(adminLookup),
+                    Navigate(Admin, ScreenTransition.None, { adminRecord: adminLookup }),
                     Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
                 ),
+                Set(
+                    teacherLookup,
+                    LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)
+                );
                 If(
-                    !IsBlank(LookUp(Teachers, tid = TextInput2.Text && password = TextInput3.Text)),
-                    Navigate(Teacher, ScreenTransition.None, { teacherID: TextInput2.Text }),
+                    !IsBlank(teacherLookup),
+                    Navigate(Teacher, ScreenTransition.None, { teacherRecord: teacherLookup }),
                     Notify("Invalid ID or Password. Please try again.", NotificationType.Error)
                 )
             )
