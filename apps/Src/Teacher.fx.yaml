@@ -4,7 +4,7 @@ Teacher As screen:
     OnVisible: |-
         =Set(
             supply,
-            LookUp('Supplies', name = Dropdown1.SelectedText.Value)
+            LookUp(Supplies, name = Dropdown1.SelectedText.Value)
         )
 
     Label1 As label:
