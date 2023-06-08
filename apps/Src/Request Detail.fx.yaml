@@ -365,29 +365,36 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: |-
-            =UpdateContext(
+            =Set(
+                supplyLookup,
+                LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid)
+            );
+            UpdateContext(
                 {
-                    supplyLookup: LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid), 
+                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
                     quan: supplyLookup.quantity - RequestGallery.Selected.ReqQuantity
                 }
             );
-            If(quan >= 0,
-                Patch(
-                    Requests,
-                    LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
-                    {
-                        Admin: adminRecord,
-                        ReqStatus: "Approved"
-                    }
-                );
-                Patch(
-                    Supplies,
-                    supplyLookup,
-                    {
-                        quantity: quan
-                    }
+            If(isApproved.ReqStatus = "Pending",
+                If(quan >= 0,
+                    Patch(
+                        Requests,
+                        LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                        {
+                            Admin: adminRecord,
+                            ReqStatus: "Approved"
+                        }
+                    );
+                    Patch(
+                        Supplies,
+                        supplyLookup,
+                        {
+                            quantity: quan
+                        }
+                    ),
+                    Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
                 ),
-                Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
+                Notify("The status of request is not pending", NotificationType.Error)
             )
         Size: =24
         Text: ="Approve"
@@ -406,13 +413,21 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: |-
-            =Patch(
-                Requests,
-                LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+            =UpdateContext(
                 {
-                    Admin: adminRecord,
-                    ReqStatus: "Rejected"
+                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName)
                 }
+            );
+            If(isApproved.ReqStatus = "Pending",
+                Patch(
+                    Requests,
+                    LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                    {
+                        Admin: adminRecord,
+                        ReqStatus: "Rejected"
+                    }
+                ),
+                Notify("The status of request is not pending",NotificationType.Error)
             )
         Size: =24
         Text: |-
@@ -434,4 +449,17 @@
         X: =17
         Y: =97
         ZIndex: =6
+
+    Label8 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =109
+        Size: =21
+        Text: |-
+            ="supplylookup quantity: " & supplyLookup.quantity & " reqQuantity: " & RequestGallery.Selected.ReqQuantity & " sub: " & supplyLookup.quantity - RequestGallery.Selected.ReqQuantity & " name: " & supplyLookup.name & " quan: " & quan
+        Width: =560
+        X: =41
+        Y: =88
+        ZIndex: =7
 

@@ -33,6 +33,7 @@
     "RequestGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         BorderColor: =RGBA(69, 186, 184, 1)
         DelayItemLoading: =true
+        Height: =897
         Items: =(Search(Requests, SearchRequest.Text, "cr0c0_reqname"))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -40,7 +41,7 @@
             =Navigate('Request Detail', ScreenTransition.None, {adminRecord: adminRecord})
         TemplatePadding: =0
         TemplateSize: =110
-        Y: =238
+        Y: =239
         ZIndex: =1
 
         Title2 As label:
