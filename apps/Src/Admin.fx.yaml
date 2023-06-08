@@ -17,7 +17,7 @@ Admin As screen:
         Items: =(Search(Supplies, SearchTextInput.Text, "cr0c0_name"))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Navigate('Add Supplies', ScreenTransition.None)
+        OnSelect: =EditForm(SuppliesEditForm);Navigate('Add Supplies', ScreenTransition.None)
         TemplatePadding: =0
         TemplateSize: =110
         Y: =193
@@ -126,7 +126,7 @@ Admin As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Add
-        OnSelect: =Navigate('Add Supplies', ScreenTransition.None)
+        OnSelect: =NewForm(SuppliesEditForm);Navigate('Add Supplies', ScreenTransition.None)
         X: =564
         Y: =16
         ZIndex: =6
