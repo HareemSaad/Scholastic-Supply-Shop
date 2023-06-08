@@ -365,24 +365,29 @@
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: |-
-            =Patch(
-                Requests,
-                LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+            =UpdateContext(
                 {
-                    Admin: adminRecord,
-                    ReqStatus: "Approved"
+                    supplyLookup: LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid), 
+                    quan: supplyLookup.quantity - RequestGallery.Selected.ReqQuantity
                 }
             );
-            Set(
-                supplyLookup,
-                LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid)
-            );
-            Patch(
-                Supplies,
-                supplyLookup,
-                {
-                    quantity: supplyLookup.quantity - RequestGallery.Selected.ReqQuantity
-                }
+            If(quan >= 0,
+                Patch(
+                    Requests,
+                    LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                    {
+                        Admin: adminRecord,
+                        ReqStatus: "Approved"
+                    }
+                );
+                Patch(
+                    Supplies,
+                    supplyLookup,
+                    {
+                        quantity: quan
+                    }
+                ),
+                Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
             )
         Size: =24
         Text: ="Approve"
@@ -429,17 +434,4 @@
         X: =17
         Y: =97
         ZIndex: =6
-
-    Label7 As label:
-        BorderColor: =RGBA(69, 186, 184, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =70
-        Size: =21
-        Text: |-
-            ="Text: " & supplyLookup.quantity - RequestGallery.Selected.ReqQuantity & " Text: " & supplyLookup.name & " Text: " & supplyLookup.sid
-        Width: =560
-        X: =40
-        Y: =97
-        ZIndex: =7
 
