@@ -1,29 +1,28 @@
 [
   {
     "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
-    "EntitySetName": "cr0c0_admins",
+    "EntitySetName": "cr0c0_requests",
     "IsHidden": false,
     "IsSampleData": false,
     "IsWritable": true,
-    "LogicalName": "cr0c0_admin",
+    "LogicalName": "cr0c0_request",
     "MaxGetRowsCount": 500,
-    "Name": "Admins",
+    "Name": "Requests",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
-      "cr0c0_admin_AsyncOperations": "System Jobs",
-      "cr0c0_admin_BulkDeleteFailures": "Bulk Delete Failures",
-      "cr0c0_admin_DuplicateBaseRecord": "Duplicate Records (cr0c0_admin_DuplicateBaseRecord)",
-      "cr0c0_admin_DuplicateMatchingRecord": "Duplicate Records (cr0c0_admin_DuplicateMatchingRecord)",
-      "cr0c0_admin_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
-      "cr0c0_admin_PrincipalObjectAttributeAccesses": "Field Sharing",
-      "cr0c0_admin_ProcessSession": "Process Sessions",
-      "cr0c0_admin_SyncErrors": "Sync Errors",
-      "cr0c0_adminid": "Admin",
-      "cr0c0_aid": "aid",
-      "cr0c0_cr0c0_request_Admin_cr0c0_admin": "Requests",
-      "cr0c0_email": "email",
-      "cr0c0_name": "name",
-      "cr0c0_password": "password",
+      "cr0c0_Admin": "Admin",
+      "cr0c0_quantity": "ReqQuantity",
+      "cr0c0_reqname": "ReqName",
+      "cr0c0_request_AsyncOperations": "System Jobs",
+      "cr0c0_request_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c0_request_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c0_request_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c0_request_ProcessSession": "Process Sessions",
+      "cr0c0_request_SyncErrors": "Sync Errors",
+      "cr0c0_requestid": "Request",
+      "cr0c0_status": "ReqStatus",
+      "cr0c0_Supplies": "Supplies",
+      "cr0c0_Teachers": "Teachers",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -41,26 +40,20 @@
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "versionnumber": "Version Number"
     },
-    "PreferredName": "Admins",
+    "PreferredName": "Requests",
     "Type": "NativeCDSDataSourceInfo"
   },
   {
-    "DisplayName": "Admins (Views)",
-    "Name": "_cr0c0_admin_views",
-    "RelatedEntityName": "Admins",
+    "DisplayName": "Requests (Views)",
+    "Name": "_cr0c0_request_views",
+    "RelatedEntityName": "Requests",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
-    "ViewInfoNameMapping": {
-      "3f223a9f-a3b6-454f-b14a-cd88a6b49aec": "Inactive Admins",
-      "66b5d161-930d-4bb1-a914-6adaa75bd45b": "Admin Associated View",
-      "7f310b9d-2734-408e-8b87-56aae2c947c9": "Admin Lookup View",
-      "c44b76f0-53af-4109-ad33-eafcc89250c8": "Admin Advanced Find View",
-      "f19c18c5-00d8-4a48-b613-1987fb8326f5": "Active Admins"
-    }
+    "ViewInfoNameMapping": {}
   },
   {
-    "DisplayName": "Status (Admins)",
-    "Name": "cr0c0_admin_statecode",
+    "DisplayName": "Status (Requests)",
+    "Name": "cr0c0_request_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
       "1": "Inactive"
@@ -70,17 +63,17 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "Admins"
+        "OptionSetReferenceEntityName": "Requests"
       }
     },
     "OptionSetTypeKey": "StateType",
     "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "Admins",
+    "RelatedEntityName": "Requests",
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (Admins)",
-    "Name": "cr0c0_admin_statuscode",
+    "DisplayName": "Status Reason (Requests)",
+    "Name": "cr0c0_request_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"
@@ -90,12 +83,12 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "Admins"
+        "OptionSetReferenceEntityName": "Requests"
       }
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "Admins",
+    "RelatedEntityName": "Requests",
     "Type": "OptionSetInfo"
   }
 ]

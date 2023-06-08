@@ -1,6 +1,8 @@
 "'success request' As screen.'phoneLayout_Success_ver3.0'":
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
+    OnVisible: |-
+        =Patch(Requests, Defaults(Requests), {Teachers: teacherLookup, Supplies: supply, ReqQuantity: requestedQuantity, ReqStatus: "Pending"})
 
     iconCircle1 As circle.Circle:
         BorderColor: =RGBA(69, 186, 184, 1)

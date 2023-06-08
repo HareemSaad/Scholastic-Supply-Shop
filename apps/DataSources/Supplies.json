@@ -10,9 +10,10 @@
     "Name": "Supplies",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr0c0_cr0c0_request_Supplies_cr0c0_supplies": "Requests",
       "cr0c0_name": "name",
       "cr0c0_quantity": "quantity",
-      "cr0c0_sid": "s-id",
+      "cr0c0_sid": "sid",
       "cr0c0_supplies_AsyncOperations": "System Jobs",
       "cr0c0_supplies_BulkDeleteFailures": "Bulk Delete Failures",
       "cr0c0_supplies_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
