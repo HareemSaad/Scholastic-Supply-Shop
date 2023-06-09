@@ -25,7 +25,7 @@
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =21
-        Width: =527
+        Width: =605
         X: =13
         Y: =102
         ZIndex: =1
@@ -34,7 +34,7 @@
         BorderColor: =RGBA(69, 186, 184, 1)
         DelayItemLoading: =true
         Height: =897
-        Items: =(Search(Requests, SearchRequest.Text, "cr0c0_reqname"))
+        Items: =Search(Requests, SearchRequest.Text, "cr0c0_reqname")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
@@ -136,16 +136,6 @@
         X: =31
         Y: =116
         ZIndex: =3
-
-    Icon1 As icon.Filter:
-        BorderColor: =RGBA(69, 186, 184, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.Filter
-        X: =562
-        Y: =114
-        ZIndex: =4
 
     Icon3 As icon.ChevronLeft:
         BorderColor: =RGBA(69, 186, 184, 1)

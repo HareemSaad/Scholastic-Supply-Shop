@@ -11,8 +11,9 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "cr0c0_Admin": "Admin",
-      "cr0c0_quantity": "ReqQuantity",
       "cr0c0_reqname": "ReqName",
+      "cr0c0_reqquantity": "ReqQuantity",
+      "cr0c0_reqstatus": "ReqStatus",
       "cr0c0_request_AsyncOperations": "System Jobs",
       "cr0c0_request_BulkDeleteFailures": "Bulk Delete Failures",
       "cr0c0_request_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
@@ -20,7 +21,6 @@
       "cr0c0_request_ProcessSession": "Process Sessions",
       "cr0c0_request_SyncErrors": "Sync Errors",
       "cr0c0_requestid": "Request",
-      "cr0c0_status": "ReqStatus",
       "cr0c0_Supplies": "Supplies",
       "cr0c0_Teachers": "Teachers",
       "createdby": "Created By",

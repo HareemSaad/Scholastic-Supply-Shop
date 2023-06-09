@@ -64,7 +64,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -257,7 +257,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Button\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Text",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -329,7 +329,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button5",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -516,7 +516,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey15": {
+    "DataCardKey2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -577,7 +577,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey15",
+      "Name": "DataCardKey2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -790,7 +790,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey16": {
+    "DataCardKey3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -851,7 +851,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey16",
+      "Name": "DataCardKey3",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1064,7 +1064,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey17": {
+    "DataCardKey4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1125,7 +1125,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey17",
+      "Name": "DataCardKey4",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1338,7 +1338,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey18": {
+    "DataCardKey5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1399,7 +1399,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey18",
+      "Name": "DataCardKey5",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1612,7 +1612,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardKey19": {
+    "DataCardKey6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1673,7 +1673,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
-      "Name": "DataCardKey19",
+      "Name": "DataCardKey6",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1886,7 +1886,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue15": {
+    "DataCardValue2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1953,7 +1953,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue15",
+      "Name": "DataCardValue2",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2161,7 +2161,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue16": {
+    "DataCardValue3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2228,7 +2228,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue16",
+      "Name": "DataCardValue3",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2436,7 +2436,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue17": {
+    "DataCardValue4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2503,7 +2503,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue17",
+      "Name": "DataCardValue4",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2711,7 +2711,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue18": {
+    "DataCardValue5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2814,7 +2814,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue18",
+      "Name": "DataCardValue5",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3062,7 +3062,7 @@
       "StyleName": "defaultComboBoxStyle",
       "Type": "ControlInfo"
     },
-    "DataCardValue19": {
+    "DataCardValue6": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3165,7 +3165,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldValue.ID%",
-      "Name": "DataCardValue19",
+      "Name": "DataCardValue6",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3413,7 +3413,7 @@
       "StyleName": "defaultComboBoxStyle",
       "Type": "ControlInfo"
     },
-    "ErrorMessage13": {
+    "ErrorMessage2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3481,7 +3481,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
-      "Name": "ErrorMessage13",
+      "Name": "ErrorMessage2",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3694,7 +3694,7 @@
       "StyleName": "criticalErrorLabelStyle",
       "Type": "ControlInfo"
     },
-    "ErrorMessage14": {
+    "ErrorMessage3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -3762,7 +3762,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%ErrorMessage.ID%",
-      "Name": "ErrorMessage14",
+      "Name": "ErrorMessage3",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4014,7 +4014,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "FormViewer1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4352,268 +4352,6 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
-      "ParentIndex": 3,
-      "PersistMetaDataIDKey": false,
-      "Properties": [
-        {
-          "Category": "Data",
-          "PropertyName": "Live",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Text",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "Role",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Overflow",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Color",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisabledColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PressedColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "HoverColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisabledBorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PressedBorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "HoverBorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderStyle",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "FocusedBorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisabledFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PressedFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "HoverFill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Font",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "FontWeight",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Align",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "VerticalAlign",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "X",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LineHeight",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderThickness",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "FocusedBorderThickness",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Size",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Italic",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Underline",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Strikethrough",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingTop",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingRight",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingBottom",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "PaddingLeft",
-          "RuleProviderType": "Unknown"
-        }
-      ],
-      "StyleName": "defaultLabelStyle",
-      "Type": "ControlInfo"
-    },
-    "Label8": {
-      "AllowAccessToGlobals": true,
-      "ControlPropertyState": [
-        "Live",
-        "Overflow",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Text\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        "Role",
-        "Color",
-        "DisabledColor",
-        "PressedColor",
-        "HoverColor",
-        "BorderColor",
-        "DisabledBorderColor",
-        "PressedBorderColor",
-        "HoverBorderColor",
-        "BorderStyle",
-        "FocusedBorderColor",
-        "Fill",
-        "DisabledFill",
-        "PressedFill",
-        "HoverFill",
-        "Font",
-        "FontWeight",
-        "Align",
-        "VerticalAlign",
-        "X",
-        "Y",
-        "Width",
-        "Height",
-        "DisplayMode",
-        "ZIndex",
-        "LineHeight",
-        "BorderThickness",
-        "FocusedBorderThickness",
-        "Size",
-        "Italic",
-        "Underline",
-        "Strikethrough",
-        "PaddingTop",
-        "PaddingRight",
-        "PaddingBottom",
-        "PaddingLeft"
-      ],
-      "HasDynamicProperties": false,
-      "IsAutoGenerated": false,
-      "IsComponentDefinition": false,
-      "IsDataControl": false,
-      "IsFromScreenLayout": false,
-      "IsGroupControl": false,
-      "IsLocked": false,
-      "LayoutName": "",
-      "MetaDataIDKey": "",
-      "Name": "Label8",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4915,7 +4653,7 @@
       "StyleName": "invertedBackgroundRectangleStyle",
       "Type": "ControlInfo"
     },
-    "ReqName_DataCard3": {
+    "ReqName_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -4976,7 +4714,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ReqName_DataCard3",
+      "Name": "ReqName_DataCard1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5049,7 +4787,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "ReqQuantity_DataCard2": {
+    "ReqQuantity_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5110,7 +4848,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ReqQuantity_DataCard2",
+      "Name": "ReqQuantity_DataCard1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5183,7 +4921,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "ReqStatus_DataCard3": {
+    "ReqStatus_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5244,7 +4982,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ReqStatus_DataCard3",
+      "Name": "ReqStatus_DataCard1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5385,7 +5123,7 @@
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "StarVisible13": {
+    "StarVisible2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5453,7 +5191,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
-      "Name": "StarVisible13",
+      "Name": "StarVisible2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5666,7 +5404,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "StarVisible14": {
+    "StarVisible3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -5734,7 +5472,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "%FieldRequired.ID%",
-      "Name": "StarVisible14",
+      "Name": "StarVisible3",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5947,7 +5685,7 @@
       "StyleName": "accentLabelStyle",
       "Type": "ControlInfo"
     },
-    "Supplies_DataCard3": {
+    "Supplies_DataCard2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6016,7 +5754,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Supplies_DataCard3",
+      "Name": "Supplies_DataCard2",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6094,7 +5832,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Teachers_DataCard3": {
+    "Teachers_DataCard1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -6163,7 +5901,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Teachers_DataCard3",
+      "Name": "Teachers_DataCard1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [

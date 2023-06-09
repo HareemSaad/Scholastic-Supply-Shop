@@ -22,13 +22,13 @@
       }
     },
     {
-      "Kind": "default.cds_msdyn_suggestedactivity_forms",
-      "Namespace": "Activity Suggestions (Forms)",
+      "Kind": "default.cds_cr0c0_request_forms",
+      "Namespace": "Requests (Forms)",
       "Values": {}
     },
     {
-      "Kind": "default.cds_cr0c0_request_forms",
-      "Namespace": "Requests (Forms)",
+      "Kind": "default.cds_msdyn_suggestedactivity_forms",
+      "Namespace": "Activity Suggestions (Forms)",
       "Values": {}
     }
   ]

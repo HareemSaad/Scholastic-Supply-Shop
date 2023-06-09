@@ -1146,30 +1146,6 @@
               "message": {
                 "text": "Error occurred running rule app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error occurred running rule app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -1180,19 +1156,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Requests'.SearchRequest.AccessibleLabel"
+                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Teachers_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Requests'.SearchRequest.AccessibleLabel",
+                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Teachers_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "View Requests",
-                "type": "'View Requests'.SearchRequest"
+                "module": "Request Detail",
+                "type": "'Request Detail'.FormViewer1.Teachers_DataCard1.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Supplies_DataCard2.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Supplies_DataCard2.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Request Detail",
+                "type": "'Request Detail'.FormViewer1.Supplies_DataCard2.DataCardValue6"
               }
             }
           ],
@@ -1660,19 +1666,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "'View Requests'.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "'View Requests'.Icon3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Add Supplies",
-                "type": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11"
+                "module": "View Requests",
+                "type": "'View Requests'.Icon3"
               }
             }
           ],
@@ -1690,19 +1696,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12.AccessibleLabel"
+                  "fullyQualifiedName": "'View Requests'.Icon3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12.AccessibleLabel",
+                  "fullyQualifiedName": "'View Requests'.Icon3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "View Requests",
+                "type": "'View Requests'.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View Requests'.SearchRequest.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View Requests'.SearchRequest.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Add Supplies",
-                "type": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12"
+                "module": "View Requests",
+                "type": "'View Requests'.SearchRequest"
               }
             }
           ],
@@ -1780,19 +1816,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Requests'.Icon3.AccessibleLabel"
+                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Requests'.Icon3.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "View Requests",
-                "type": "'View Requests'.Icon3"
+                "module": "Add Supplies",
+                "type": "'Add Supplies'.SuppliesEditForm.name_DataCard3.DataCardValue11"
               }
             }
           ],
@@ -1810,79 +1846,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'View Requests'.Icon3.TabIndex"
+                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'View Requests'.Icon3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "View Requests",
-                "type": "'View Requests'.Icon3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Teachers_DataCard3.DataCardValue18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Teachers_DataCard3.DataCardValue18.AccessibleLabel",
+                  "fullyQualifiedName": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Request Detail",
-                "type": "'Request Detail'.FormViewer1.Teachers_DataCard3.DataCardValue18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Supplies_DataCard3.DataCardValue19.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Request Detail'.FormViewer1.Supplies_DataCard3.DataCardValue19.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Request Detail",
-                "type": "'Request Detail'.FormViewer1.Supplies_DataCard3.DataCardValue19"
+                "module": "Add Supplies",
+                "type": "'Add Supplies'.SuppliesEditForm.quantity_DataCard3.DataCardValue12"
               }
             }
           ],
