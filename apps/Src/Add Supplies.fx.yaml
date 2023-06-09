@@ -106,7 +106,7 @@
                 ChevronHoverBackground: =ColorFade(RGBA(3, 121, 137, 1), -20%)
                 ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 Color: =RGBA(255, 255, 255, 1)
-                Default: =Parent.Default
+                Default: =
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -115,7 +115,7 @@
                 Height: =70
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(16, 65, 71, 1)
-                Items: =Parent.AllowedValues
+                Items: =Filter(Parent.AllowedValues, Value = Dropdown1.Selected.name)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(69, 186, 184, 1)
                 SelectionFill: =RGBA(3, 121, 137, 1)
