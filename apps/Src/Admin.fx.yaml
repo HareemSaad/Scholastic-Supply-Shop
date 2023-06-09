@@ -194,7 +194,9 @@ Admin As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Journal
-        X: =398
+        OnSelect: |-
+            =Navigate('View All Requests', ScreenTransition.None, { adminRecord: adminRecord })
+        X: =368
         Y: =16
         ZIndex: =9
 
