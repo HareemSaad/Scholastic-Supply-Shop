@@ -79,13 +79,14 @@
         BorderColor: =RGBA(69, 186, 184, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
-        Default: ="Text input"
+        Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
         Height: =70
+        HintText: ="Item Name"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(16, 65, 71, 1)
@@ -113,7 +114,7 @@
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =70
         Size: =21
-        Text: ="Na"
+        Text: ="Name"
         Width: =560
         X: =41
         Y: =267
