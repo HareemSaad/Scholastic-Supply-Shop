@@ -188,3 +188,13 @@ Admin As screen:
         Y: =118
         ZIndex: =8
 
+    Icon1 As icon.Journal:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(69, 186, 184, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Journal
+        X: =398
+        Y: =16
+        ZIndex: =9
+
