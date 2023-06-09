@@ -144,7 +144,7 @@ Admin As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Add
-        OnSelect: =NewForm(SuppliesEditForm);Navigate('Add Supplies', ScreenTransition.None)
+        OnSelect: =NewForm(Form1);Navigate('Add New Supplies', ScreenTransition.None)
         X: =564
         Y: =16
         ZIndex: =6
