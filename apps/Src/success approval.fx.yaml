@@ -29,13 +29,12 @@
 
     LblSuccessMsg1_2 As label:
         Align: =Align.Center
-        AutoHeight: =true
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =iconCircle1_2.Height
+        Height: =55
         Size: =21
-        Text: ="Request Accepted"
+        Text: =msg
         Width: =Parent.Width * 0.75
         X: =Parent.Width/2 - Self.Width/2
         Y: =iconCheck1_2.Y + iconCheck1_2.Height + 100
@@ -50,7 +49,7 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
-        OnSelect: =Back();Back()
+        OnSelect: =Back()
         Size: =24
         Text: ="Back"
         Width: =280

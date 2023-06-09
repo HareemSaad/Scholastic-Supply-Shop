@@ -37,13 +37,21 @@
         Height: =88
         Icon: =Icon.Check
         OnSelect: |-
-            =Patch(
-                Supplies, 
-                Defaults(Supplies), 
-                {
-                    name: TextInput4.Text,
-                    quantity:Slider3.Value
-                }
+            =Set (
+                patchRecord1,
+                Patch(
+                    Supplies, 
+                    Defaults(Supplies), 
+                    {
+                        name: TextInput4.Text,
+                        quantity:Slider3.Value
+                    }
+                )
+            );
+            If(
+                patchRecord1.quantity = Slider3.Value && patchRecord1.name = TextInput4.Text, 
+                Navigate('success approval',ScreenTransition.None,{msg: "New Item Added Successfully"}),
+                Navigate('failed approval',ScreenTransition.None,{msg: "Item Addition Failed"})
             )
         PaddingBottom: =22
         PaddingLeft: =22

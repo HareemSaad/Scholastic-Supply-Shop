@@ -42,13 +42,21 @@
                 current,
                 LookUp(Supplies, name = DataCardValue7.Text)
             );
-            Patch(
-                Supplies,
-                current,
-                {
-                    quantity : DataCardValue16.Value + current.quantity
-                }
+            Set (
+                patchRecord,
+                Patch(
+                    Supplies,
+                    current,
+                    {
+                        quantity : DataCardValue16.Value + current.quantity
+                    }
+                )
             );
+            If(
+                patchRecord.quantity = DataCardValue16.Value + current.quantity, 
+                Navigate('success approval',ScreenTransition.None,{msg: "Quantity Updated Successfully"}),
+                Navigate('failed approval',ScreenTransition.None,{msg: "Failed"})
+            )
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22

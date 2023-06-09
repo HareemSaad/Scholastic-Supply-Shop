@@ -396,7 +396,7 @@
                 ),
                 Notify("The status of request is not pending", NotificationType.Error)
             );
-            (isApproved.ReqStatus = "Pending") && Navigate('success approval', ScreenTransition.None)
+            (isApproved.ReqStatus = "Pending") && Navigate('success approval', ScreenTransition.None,{msg: "Request Accepted"})
         Size: =24
         Text: ="Approve"
         Width: =250
