@@ -395,7 +395,8 @@
                     Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
                 ),
                 Notify("The status of request is not pending", NotificationType.Error)
-            )
+            );
+            (isApproved.ReqStatus = "Pending") && Navigate('success approval', ScreenTransition.None)
         Size: =24
         Text: ="Approve"
         Width: =250
@@ -428,7 +429,8 @@
                     }
                 ),
                 Notify("The status of request is not pending",NotificationType.Error)
-            )
+            );
+            (isApproved.ReqStatus = "Pending") && Navigate('failed approval', ScreenTransition.None)
         Size: =24
         Text: |-
             ="Reject

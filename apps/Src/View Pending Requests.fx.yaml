@@ -1,4 +1,4 @@
-"'View Requests' As screen":
+"'View Pending Requests' As screen":
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
 
@@ -34,7 +34,11 @@
         BorderColor: =RGBA(69, 186, 184, 1)
         DelayItemLoading: =true
         Height: =897
-        Items: =Search(Requests, SearchRequest.Text, "cr0c0_reqname")
+        Items: |-
+            =Filter(
+                Search(Requests, SearchRequest.Text, "cr0c0_reqname"),
+                ReqStatus = "pending"
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-

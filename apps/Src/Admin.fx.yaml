@@ -133,7 +133,7 @@ Admin As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Icon: =Icon.Bell
         OnSelect: |-
-            =Navigate('View Requests', ScreenTransition.None, { adminRecord: adminRecord })
+            =Navigate('View Pending Requests', ScreenTransition.None, { adminRecord: adminRecord })
         X: =470
         Y: =16
         ZIndex: =5
