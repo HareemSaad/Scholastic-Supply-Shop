@@ -10,6 +10,7 @@
     "Name": "Teachers",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr0c0_cr0c0_request_Teachers_cr0c0_teachers": "Requests",
       "cr0c0_name": "name",
       "cr0c0_password": "password",
       "cr0c0_teachers_AsyncOperations": "System Jobs",

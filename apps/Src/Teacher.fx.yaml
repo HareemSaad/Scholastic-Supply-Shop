@@ -106,7 +106,7 @@ Teacher As screen:
                     supply,
                     LookUp(Supplies, name = Dropdown1.SelectedText.Value)
                 ) && !IsBlank(supply) && Slider1.Value <= Value(supply.quantity),
-                Navigate('success request', ScreenTransition.None),
+                Navigate('success request', ScreenTransition.None,{teacherRecord: teacherRecord, supply: supply, requestedQuantity: Slider1.Value}),
                 Navigate('failed request', ScreenTransition.None)
             )
         Size: =24

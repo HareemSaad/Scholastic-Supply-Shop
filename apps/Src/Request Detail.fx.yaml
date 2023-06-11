@@ -1,0 +1,454 @@
+"'Request Detail' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(29, 29, 29, 1)
+    LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
+
+    RectQuickActionBar3 As rectangle:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    IconCancel3 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =88
+        Icon: =Icon.Cancel
+        OnSelect: =Back()
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        PressedFill: =RGBA(255, 255, 255, 0.3)
+        TabIndex: =0
+        Tooltip: ="Cancel item"
+        Width: =88
+        ZIndex: =2
+
+    FormViewer1 As formViewer:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        DataSource: =Requests
+        Height: =650
+        Item: =RequestGallery.Selected
+        Width: =640
+        Y: =167
+        ZIndex: =3
+
+        ReqName_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c0_reqname"
+            Default: =ThisItem.ReqName
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Requests],DataSourceInfo.DisplayName,"cr0c0_reqname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey2 As label:
+                AutoHeight: =true
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue2 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(69, 186, 184, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey2.Y + DataCardKey2.Height + 5
+                ZIndex: =2
+
+        ReqQuantity_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c0_reqquantity"
+            Default: =ThisItem.ReqQuantity
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Requests],DataSourceInfo.DisplayName,"cr0c0_reqquantity")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(69, 186, 184, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+        ReqStatus_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c0_reqstatus"
+            Default: =ThisItem.ReqStatus
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Requests],DataSourceInfo.DisplayName,"cr0c0_reqstatus")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =true
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(69, 186, 184, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+        Teachers_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c0_Teachers"
+            Default: =ThisItem.Teachers
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Requests],DataSourceInfo.DisplayName,"cr0c0_Teachers")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue5.Selected
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(3, 121, 137, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(3, 121, 137, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["cr0c0_tid"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =70
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(16, 65, 71, 1)
+                Items: =Choices([@Requests].cr0c0_Teachers)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(69, 186, 184, 1)
+                SearchFields: =["cr0c0_tid"]
+                SearchItems: =Search(Choices([@Requests].cr0c0_Teachers),DataCardValue5.SearchText,"cr0c0_tid")
+                SelectionFill: =RGBA(3, 121, 137, 1)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey5.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        Supplies_DataCard2 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c0_Supplies"
+            Default: =ThisItem.Supplies
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Requests],DataSourceInfo.DisplayName,"cr0c0_Supplies")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue6.Selected
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(3, 121, 137, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(3, 121, 137, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["cr0c0_sid"]
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =70
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(16, 65, 71, 1)
+                Items: =Choices([@Requests].cr0c0_Supplies)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(69, 186, 184, 1)
+                SearchFields: =["cr0c0_sid"]
+                SearchItems: =Search(Choices([@Requests].cr0c0_Supplies),DataCardValue6.SearchText,"cr0c0_sid")
+                SelectionFill: =RGBA(3, 121, 137, 1)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Color: =RGBA(69, 186, 184, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey6.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+    Button4 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =77
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
+        OnSelect: |-
+            =Set(
+                supplyLookup,
+                LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid)
+            );
+            UpdateContext(
+                {
+                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                    quan: supplyLookup.quantity - RequestGallery.Selected.ReqQuantity
+                }
+            );
+            If(isApproved.ReqStatus = "Pending",
+                If(quan >= 0,
+                    Patch(
+                        Requests,
+                        LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                        {
+                            Admin: adminRecord,
+                            ReqStatus: "Approved"
+                        }
+                    );
+                    Patch(
+                        Supplies,
+                        supplyLookup,
+                        {
+                            quantity: quan
+                        }
+                    ),
+                    Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
+                ),
+                Notify("The status of request is not pending", NotificationType.Error)
+            );
+            (isApproved.ReqStatus = "Pending") && Navigate('success approval', ScreenTransition.None,{msg: "Request Accepted"})
+        Size: =24
+        Text: ="Approve"
+        Width: =250
+        X: =41
+        Y: =920
+        ZIndex: =4
+
+    Button5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =77
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
+        OnSelect: |-
+            =UpdateContext(
+                {
+                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName)
+                }
+            );
+            If(isApproved.ReqStatus = "Pending",
+                Patch(
+                    Requests,
+                    LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                    {
+                        Admin: adminRecord,
+                        ReqStatus: "Rejected"
+                    }
+                ),
+                Notify("The status of request is not pending",NotificationType.Error)
+            );
+            (isApproved.ReqStatus = "Pending") && Navigate('failed approval', ScreenTransition.None)
+        Size: =24
+        Text: |-
+            ="Reject
+            "
+        Width: =250
+        X: =350
+        Y: =920
+        ZIndex: =5
+
+    Label6 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =70
+        Size: =21
+        Text: =
+        Width: =560
+        X: =17
+        Y: =97
+        ZIndex: =6
+

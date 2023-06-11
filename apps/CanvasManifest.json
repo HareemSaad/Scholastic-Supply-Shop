@@ -133,9 +133,14 @@
     "login",
     "Teacher",
     "success request",
+    "success approval",
     "failed request",
+    "failed approval",
     "Admin",
+    "View Pending Requests",
+    "View All Requests",
     "Add Supplies",
-    "View Requests"
+    "Request Detail",
+    "Add New Supplies"
   ]
 }

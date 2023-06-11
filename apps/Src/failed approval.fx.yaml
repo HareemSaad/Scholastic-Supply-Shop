@@ -1,48 +1,46 @@
-"'success request' As screen.'phoneLayout_Success_ver3.0'":
+"'failed approval' As screen.'phoneLayout_Success_ver3.0'":
     Fill: =RGBA(29, 29, 29, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
-    OnVisible: |-
-        =Patch(Requests, Defaults(Requests), {Teachers: teacherLookup, Supplies: supply, ReqQuantity: requestedQuantity, ReqStatus: "Pending"})
 
-    iconCircle1 As circle.Circle:
+    iconCircle1_3 As circle.Circle:
         BorderColor: =RGBA(69, 186, 184, 1)
         Fill: =RGBA(3, 121, 137, 1)
         X: =Parent.Width/2 - Self.Width/2
         Y: =(Parent.Height/2 - Self.Height/2) * .7
         ZIndex: =1
 
-    iconCheck1 As icon.Check:
+    iconCheck1_3 As icon.Check:
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =iconCircle1.Height
-        Icon: =Icon.Check
+        Height: =iconCircle1_3.Height
+        Icon: =Icon.Cancel
         PaddingBottom: =Self.PaddingTop
         PaddingLeft: =Self.PaddingTop
         PaddingRight: =Self.PaddingTop
         PaddingTop: =18
         PressedFill: =RGBA(255, 255, 255, 0.3)
-        Width: =iconCircle1.Width
+        Width: =iconCircle1_3.Width
         X: =Parent.Width/2 - Self.Width/2
         Y: =(Parent.Height/2 - Self.Height/2) * .7
         ZIndex: =2
 
-    LblSuccessMsg1 As label:
+    LblSuccessMsg1_3 As label:
         Align: =Align.Center
         AutoHeight: =true
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =iconCircle1.Height
+        Height: =iconCircle1_3.Height
         Size: =21
-        Text: ="Request placed successfully"
+        Text: =msg
         Width: =Parent.Width * 0.75
         X: =Parent.Width/2 - Self.Width/2
-        Y: =iconCheck1.Y + iconCheck1.Height + 100
+        Y: =iconCheck1_3.Y + iconCheck1_3.Height + 100
         ZIndex: =3
 
-    Button3_1 As button:
+    Button3_3 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -51,7 +49,7 @@
         Height: =70
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
-        OnSelect: =Back()
+        OnSelect: =Back();Back()
         Size: =24
         Text: ="Back"
         Width: =280
