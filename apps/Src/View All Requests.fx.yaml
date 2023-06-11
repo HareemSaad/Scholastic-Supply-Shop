@@ -1,5 +1,5 @@
 "'View All Requests' As screen":
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
 
     SearchRequest_1 As text:
@@ -7,14 +7,13 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
         Clear: =true
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(0, 0, 0, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
         FocusedBorderThickness: =4
-        Height: =89
+        Height: =67
         HintText: ="Search"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
@@ -25,9 +24,9 @@
         RadiusTopLeft: =15
         RadiusTopRight: =15
         Size: =21
-        Width: =605
-        X: =13
-        Y: =102
+        Width: =583
+        X: =18
+        Y: =125
         ZIndex: =1
 
     "RequestGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
@@ -44,6 +43,14 @@
         Y: =239
         ZIndex: =1
 
+        Rectangle7 As rectangle:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            Fill: =RGBA(3, 121, 137, 1)
+            OnSelect: =Select(Parent)
+            Width: =592
+            X: =16
+            ZIndex: =1
+
         Title2_1 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -58,9 +65,9 @@
             Text: =ThisItem.ReqName
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
-            X: =16
+            X: =34
             Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2_1.Size * 1.8)) / 2
-            ZIndex: =1
+            ZIndex: =2
 
         Subtitle2_1 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -72,18 +79,17 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =16
             Text: =ThisItem.ReqStatus
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2_1.Width
-            X: =Title2_1.X
+            X: =34
             Y: =Title2_1.Y + Title2_1.Height
-            ZIndex: =2
+            ZIndex: =3
 
         NextArrow2_1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(69, 186, 184, 1)
-            Color: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =50
@@ -95,18 +101,18 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
+            X: =554
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
+            ZIndex: =4
 
         Separator2_1 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(104, 175, 184, 1)
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =102
-            ZIndex: =4
+            ZIndex: =5
 
         Rectangle2_1 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
@@ -115,7 +121,7 @@
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
             Width: =4
-            ZIndex: =5
+            ZIndex: =6
 
     NavRectangle_2 As rectangle:
         BorderColor: =RGBA(69, 186, 184, 1)
@@ -130,11 +136,11 @@
         Color: =RGBA(69, 186, 184, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =33
         Icon: =Icon.Search
-        Width: =50
-        X: =31
-        Y: =116
+        Width: =30
+        X: =38
+        Y: =143
         ZIndex: =3
 
     Icon3_1 As icon.ChevronLeft:
@@ -142,9 +148,11 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =48
         Icon: =Icon.ChevronLeft
         OnSelect: =Back()
-        X: =11
-        Y: =16
+        Width: =43
+        X: =18
+        Y: =23
         ZIndex: =5
 
