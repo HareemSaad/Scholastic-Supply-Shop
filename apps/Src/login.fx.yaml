@@ -125,18 +125,6 @@ login As screen:
         Width: =639
         ZIndex: =6
 
-    Label9 As label:
-        BorderColor: =RGBA(69, 186, 184, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =60
-        Size: =28
-        Text: ="App"
-        Width: =126
-        X: =93
-        Y: =13
-        ZIndex: =7
-
     Icon2 As icon.AddUser:
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
@@ -147,17 +135,6 @@ login As screen:
         X: =546
         Y: =29
         ZIndex: =8
-
-    Icon6 As icon.Hamburger:
-        BorderColor: =RGBA(69, 186, 184, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.Hamburger
-        Width: =32
-        X: =26
-        Y: =16
-        ZIndex: =11
 
     Label10 As label:
         Align: =Align.Center

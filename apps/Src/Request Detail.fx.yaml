@@ -60,7 +60,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Request Id"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -105,7 +105,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Request Quantity"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -150,7 +150,7 @@
                 FontWeight: =FontWeight.Bold
                 Height: =48
                 Size: =21
-                Text: =Parent.DisplayName
+                Text: ="Request Status"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
