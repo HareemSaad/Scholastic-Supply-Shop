@@ -1,5 +1,5 @@
 "'success approval' As screen.'phoneLayout_Success_ver3.0'":
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
     OnVisible: =
 
@@ -40,20 +40,49 @@
         Y: =iconCheck1_2.Y + iconCheck1_2.Height + 100
         ZIndex: =3
 
-    Button3_2 As button:
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        Width: =639
+        ZIndex: =5
+
+    Label9_3 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =60
+        Size: =28
+        Text: ="App"
+        Width: =126
+        X: =93
+        Y: =13
+        ZIndex: =6
+
+    Icon6_3 As icon.Hamburger:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Hamburger
+        Width: =32
+        X: =26
+        Y: =16
+        ZIndex: =7
+
+    Button3_4 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(3, 121, 137, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =79
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: =Back()
         Size: =24
         Text: ="Back"
-        Width: =280
-        X: =180
-        Y: =848
-        ZIndex: =4
+        Width: =500
+        X: =79
+        Y: =778
+        ZIndex: =8
 

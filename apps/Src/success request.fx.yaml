@@ -1,5 +1,5 @@
 "'success request' As screen.'phoneLayout_Success_ver3.0'":
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
     OnVisible: |-
         =Patch(Requests, Defaults(Requests), {Teachers: teacherLookup, Supplies: supply, ReqQuantity: requestedQuantity, ReqStatus: "Pending"})
@@ -7,8 +7,8 @@
     iconCircle1 As circle.Circle:
         BorderColor: =RGBA(69, 186, 184, 1)
         Fill: =RGBA(3, 121, 137, 1)
-        X: =Parent.Width/2 - Self.Width/2
-        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        X: =269
+        Y: =354
         ZIndex: =1
 
     iconCheck1 As icon.Check:
@@ -24,8 +24,8 @@
         PaddingTop: =18
         PressedFill: =RGBA(255, 255, 255, 0.3)
         Width: =iconCircle1.Width
-        X: =Parent.Width/2 - Self.Width/2
-        Y: =(Parent.Height/2 - Self.Height/2) * .7
+        X: =269
+        Y: =354
         ZIndex: =2
 
     LblSuccessMsg1 As label:
@@ -35,11 +35,11 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =iconCircle1.Height
-        Size: =21
-        Text: ="Request placed successfully"
+        Size: =26
+        Text: ="Request Placed Successfully"
         Width: =Parent.Width * 0.75
-        X: =Parent.Width/2 - Self.Width/2
-        Y: =iconCheck1.Y + iconCheck1.Height + 100
+        X: =79
+        Y: =550
         ZIndex: =3
 
     Button3_1 As button:
@@ -48,14 +48,43 @@
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(3, 121, 137, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =79
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: =Back()
         Size: =24
         Text: ="Back"
-        Width: =280
-        X: =180
-        Y: =848
+        Width: =500
+        X: =79
+        Y: =778
         ZIndex: =4
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        Width: =639
+        ZIndex: =5
+
+    Label9_2 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =60
+        Size: =28
+        Text: ="App"
+        Width: =126
+        X: =93
+        Y: =13
+        ZIndex: =6
+
+    Icon6_2 As icon.Hamburger:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.Hamburger
+        Width: =32
+        X: =26
+        Y: =16
+        ZIndex: =7
 

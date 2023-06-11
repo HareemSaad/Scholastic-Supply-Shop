@@ -10,14 +10,13 @@ login As screen:
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(205, 228, 231, 1)
-        Fill: =RGBA(205, 228, 231, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Height: =76
         HintText: ="Your Id"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
         HoverColor: =RGBA(29, 29, 29, 1)
-        HoverFill: =RGBA(205, 228, 231, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
@@ -25,7 +24,7 @@ login As screen:
         Size: =21
         Width: =470
         X: =76
-        Y: =461
+        Y: =422
         ZIndex: =1
 
     TextInput3 As text:
@@ -36,14 +35,13 @@ login As screen:
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(205, 228, 231, 1)
-        Fill: =RGBA(205, 228, 231, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Height: =76
         HintText: ="Passcode"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
         HoverColor: =RGBA(29, 29, 29, 1)
-        HoverFill: =RGBA(205, 228, 231, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.Password
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
@@ -52,7 +50,7 @@ login As screen:
         Size: =21
         Width: =470
         X: =76
-        Y: =581
+        Y: =542
         ZIndex: =2
 
     Button2 As button:
@@ -91,7 +89,7 @@ login As screen:
         Text: ="Login"
         Width: =470
         X: =76
-        Y: =863
+        Y: =824
         ZIndex: =3
 
     Toggle1 As toggleSwitch:
@@ -106,7 +104,7 @@ login As screen:
         TrueFill: =RGBA(3, 121, 137, 1)
         Width: =90
         X: =388
-        Y: =775
+        Y: =736
         ZIndex: =4
 
     Label5 As label:
@@ -118,7 +116,7 @@ login As screen:
         Text: ="Are you an admin?"
         Width: =296
         X: =114
-        Y: =765
+        Y: =726
         ZIndex: =5
 
     Rectangle1 As rectangle:
