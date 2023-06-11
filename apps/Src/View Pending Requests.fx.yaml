@@ -1,5 +1,5 @@
 "'View Pending Requests' As screen":
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
 
     SearchRequest As text:
@@ -7,18 +7,17 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =2
         Clear: =true
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
-        Height: =89
+        Height: =74
         HintText: ="Search"
-        HoverBorderColor: =RGBA(69, 186, 184, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(16, 65, 71, 1)
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         PaddingLeft: =80
         RadiusBottomLeft: =15
         RadiusBottomRight: =15
@@ -27,11 +26,11 @@
         Size: =21
         Width: =605
         X: =13
-        Y: =102
+        Y: =116
         ZIndex: =1
 
     "RequestGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
-        BorderColor: =RGBA(69, 186, 184, 1)
+        BorderColor: =RGBA(2, 85, 96, 1)
         DelayItemLoading: =true
         Height: =897
         Items: |-
@@ -45,8 +44,19 @@
             =Navigate('Request Detail', ScreenTransition.None, {adminRecord: adminRecord})
         TemplatePadding: =0
         TemplateSize: =110
-        Y: =239
+        Width: =601
+        X: =14
+        Y: =227
         ZIndex: =1
+
+        Rectangle4 As rectangle:
+            BorderColor: =RGBA(69, 186, 184, 1)
+            Fill: =RGBA(3, 121, 137, 1)
+            Height: =99
+            OnSelect: =Select(Parent)
+            Width: =585
+            Y: =3
+            ZIndex: =1
 
         Title2 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -63,8 +73,8 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 86
             X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
-            ZIndex: =1
+            Y: =22
+            ZIndex: =2
 
         Subtitle2 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -76,20 +86,20 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =16
             Text: =ThisItem.ReqStatus
             VerticalAlign: =VerticalAlign.Top
             Width: =Title2.Width
-            X: =Title2.X
-            Y: =Title2.Y + Title2.Height
-            ZIndex: =2
+            X: =16
+            Y: =64
+            ZIndex: =3
 
         NextArrow2 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(69, 186, 184, 1)
-            Color: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(3, 121, 137, 1)
             Height: =50
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
@@ -99,18 +109,18 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =3
+            X: =523
+            Y: =26
+            ZIndex: =4
 
         Separator2 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(104, 175, 184, 1)
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =110
-            ZIndex: =4
+            ZIndex: =5
 
         Rectangle2 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
@@ -119,12 +129,12 @@
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
             Width: =4
-            ZIndex: =5
+            ZIndex: =6
 
     NavRectangle_1 As rectangle:
         BorderColor: =RGBA(69, 186, 184, 1)
         Fill: =RGBA(3, 121, 137, 1)
-        Height: =97
+        Height: =83
         OnSelect: =
         Width: =640
         ZIndex: =2
@@ -134,11 +144,11 @@
         Color: =RGBA(69, 186, 184, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =46
         Icon: =Icon.Search
-        Width: =50
-        X: =31
-        Y: =116
+        Width: =27
+        X: =43
+        Y: =130
         ZIndex: =3
 
     Icon3 As icon.ChevronLeft:
@@ -146,9 +156,11 @@
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =56
         Icon: =Icon.ChevronLeft
         OnSelect: =Back()
-        X: =11
+        Width: =20
+        X: =23
         Y: =16
         ZIndex: =5
 
