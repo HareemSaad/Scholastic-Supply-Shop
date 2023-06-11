@@ -9,13 +9,13 @@
         Clear: =true
         Color: =RGBA(0, 0, 0, 1)
         Default: =""
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledBorderColor: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(0, 0, 0, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Height: =67
         HintText: ="Search"
-        HoverBorderColor: =RGBA(69, 186, 184, 1)
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(16, 65, 71, 1)
         PaddingLeft: =80
@@ -25,8 +25,8 @@
         RadiusTopRight: =15
         Size: =21
         Width: =583
-        X: =18
-        Y: =125
+        X: =28
+        Y: =135
         ZIndex: =1
 
     "RequestGallery_1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
@@ -139,8 +139,8 @@
         Height: =33
         Icon: =Icon.Search
         Width: =30
-        X: =38
-        Y: =143
+        X: =48
+        Y: =153
         ZIndex: =3
 
     Icon3_1 As icon.ChevronLeft:
