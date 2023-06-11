@@ -116,11 +116,12 @@
 
         Rectangle2_1 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
-            Fill: =RGBA(69, 186, 184, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.TemplateHeight - Separator2_1.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =4
+            Width: =3
+            X: =15
             ZIndex: =6
 
     NavRectangle_2 As rectangle:

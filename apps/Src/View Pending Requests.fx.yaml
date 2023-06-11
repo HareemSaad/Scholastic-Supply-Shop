@@ -124,7 +124,7 @@
 
         Rectangle2 As rectangle:
             BorderColor: =RGBA(69, 186, 184, 1)
-            Fill: =RGBA(69, 186, 184, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =Parent.TemplateHeight - Separator2.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
