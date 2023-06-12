@@ -41,7 +41,7 @@
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: |-
-            =Navigate('Request Detail', ScreenTransition.None, {adminRecord: adminRecord})
+            =Navigate('Request Detail', ScreenTransition.None, {adminRecord: adminRecord, selectedRequest: ThisItem})
         TemplatePadding: =0
         TemplateSize: =110
         Width: =601
