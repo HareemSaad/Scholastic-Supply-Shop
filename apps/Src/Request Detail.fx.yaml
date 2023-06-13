@@ -400,6 +400,13 @@
                             quantity: quan
                         }
                     ),
+                    Patch(
+                        Requests,
+                        LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                        {
+                            Admin: adminRecord
+                        }
+                    );
                     Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
                 ),
                 Notify("The status of request is not pending", NotificationType.Error)
