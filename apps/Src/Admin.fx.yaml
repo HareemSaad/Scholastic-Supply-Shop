@@ -215,6 +215,7 @@ Admin As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =57
         Icon: =Icon.BackArrow
+        OnSelect: =Back()
         Width: =44
         X: =19
         Y: =19
