@@ -1,51 +1,60 @@
 login As screen:
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
 
     TextInput2 As text:
         BorderColor: =RGBA(69, 186, 184, 1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Clear: =true
+        Color: =RGBA(29, 29, 29, 1)
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Height: =76
         HintText: ="Your Id"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(16, 65, 71, 1)
+        HoverColor: =RGBA(29, 29, 29, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
         Size: =21
         Width: =470
         X: =76
-        Y: =272
+        Y: =422
         ZIndex: =1
 
     TextInput3 As text:
         BorderColor: =RGBA(69, 186, 184, 1)
         BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
+        Clear: =true
+        Color: =RGBA(29, 29, 29, 1)
         Default: =""
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =4
         Height: =76
         HintText: ="Passcode"
         HoverBorderColor: =RGBA(69, 186, 184, 1)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(16, 65, 71, 1)
+        HoverColor: =RGBA(29, 29, 29, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.Password
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
         Size: =21
         Width: =470
         X: =76
-        Y: =428
+        Y: =542
         ZIndex: =2
 
     Button2 As button:
+        BorderThickness: =1
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -77,25 +86,25 @@ login As screen:
                 )
             )
         Size: =24
-        Text: ="login"
-        Width: =280
-        X: =171
-        Y: =778
+        Text: ="Login"
+        Width: =470
+        X: =76
+        Y: =824
         ZIndex: =3
 
     Toggle1 As toggleSwitch:
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
-        FalseFill: =RGBA(128, 130, 133, 1)
-        HandleFill: =RGBA(255, 255, 255, 1)
+        FalseFill: =RGBA(237, 237, 237, 1)
+        HandleFill: =RGBA(2, 85, 96, 1)
         Height: =49
         ShowLabel: =false
         Size: =21
         TextPosition: =TextPosition.Left
         TrueFill: =RGBA(3, 121, 137, 1)
         Width: =90
-        X: =456
-        Y: =605
+        X: =388
+        Y: =736
         ZIndex: =4
 
     Label5 As label:
@@ -106,7 +115,39 @@ login As screen:
         Size: =21
         Text: ="Are you an admin?"
         Width: =296
-        X: =80
-        Y: =595
+        X: =114
+        Y: =726
         ZIndex: =5
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        Width: =639
+        ZIndex: =6
+
+    Icon2 As icon.AddUser:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =51
+        Icon: =Icon.AddUser
+        X: =546
+        Y: =29
+        ZIndex: =8
+
+    Label10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(104, 175, 184, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =28
+        Text: ="Login Your Account"
+        Width: =560
+        X: =31
+        Y: =266
+        ZIndex: =12
 

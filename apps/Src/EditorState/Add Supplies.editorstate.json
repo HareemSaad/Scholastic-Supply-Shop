@@ -3,7 +3,14 @@
     "Add Supplies": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImagePosition",
         "Height",
         "Width",
@@ -341,8 +348,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.DisplayName",
           "InvariantPropertyName": "Text",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -350,7 +357,14 @@
         "Live",
         "Overflow",
         "Role",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -365,7 +379,14 @@
         "PressedFill",
         "HoverFill",
         "Font",
-        "FontWeight",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FontWeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Align",
         "VerticalAlign",
         "X",
@@ -383,7 +404,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough"
@@ -615,8 +643,8 @@
       "ControlPropertyState": [
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Parent.DisplayName",
           "InvariantPropertyName": "Text",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -624,7 +652,14 @@
         "Live",
         "Overflow",
         "Role",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -639,7 +674,14 @@
         "PressedFill",
         "HoverFill",
         "Font",
-        "FontWeight",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "FontWeight",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Align",
         "VerticalAlign",
         "X",
@@ -657,7 +699,14 @@
         "LineHeight",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough"
@@ -936,8 +985,22 @@
           "NameMapSourceSchema": "?"
         },
         "Layout",
-        "ValueFill",
-        "RailFill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ValueFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "RailFill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "HandleFill",
         "HandleHoverFill",
         "HandleActiveFill",
@@ -1724,7 +1787,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneIconAccept.ID%",
       "Name": "IconAccept1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2148,7 +2211,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplatePhoneLblAppName.ID%",
       "Name": "LblAppName1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

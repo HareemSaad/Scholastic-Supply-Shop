@@ -1,13 +1,15 @@
 Teacher As screen:
-    Fill: =RGBA(29, 29, 29, 1)
+    Fill: =RGBA(104, 175, 184, 1)
     LoadingSpinnerColor: =RGBA(3, 121, 137, 1)
     OnVisible: =
 
     Label1 As label:
+        Align: =Align.Center
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
         Height: =70
         Size: =28
         Text: |-
@@ -15,31 +17,19 @@ Teacher As screen:
             "
         Width: =560
         X: =36
-        Y: =141
+        Y: =284
         ZIndex: =1
-
-    Label2 As label:
-        BorderColor: =RGBA(69, 186, 184, 1)
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =73
-        Size: =21
-        Text: ="Hello! " & teacherRecord.name
-        Width: =520
-        X: =56
-        Y: =278
-        ZIndex: =2
 
     Label3 As label:
         BorderColor: =RGBA(69, 186, 184, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =70
-        Size: =21
+        Size: =24
         Text: ="Supply"
         Width: =560
         X: =36
-        Y: =461
+        Y: =448
         ZIndex: =3
 
     Dropdown1 As dropdown:
@@ -49,18 +39,16 @@ Teacher As screen:
         ChevronDisabledFill: =RGBA(244, 244, 244, 1)
         ChevronHoverBackground: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
         Height: =70
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =RGBA(16, 65, 71, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         Items: =Supplies
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =RGBA(69, 186, 184, 1)
-        SelectionFill: =RGBA(3, 121, 137, 1)
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        SelectionFill: =RGBA(2, 85, 96, 1)
         Size: =21
         Width: =496
         X: =68
@@ -72,7 +60,7 @@ Teacher As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =70
-        Size: =21
+        Size: =24
         Text: ="Quantity"
         Width: =560
         X: =36
@@ -84,8 +72,8 @@ Teacher As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         HandleFill: =RGBA(255, 255, 255, 1)
         Height: =70
-        RailFill: =RGBA(128, 130, 133, 1)
-        ValueFill: =RGBA(69, 186, 184, 1)
+        RailFill: =RGBA(29, 29, 29, 1)
+        ValueFill: =RGBA(255, 255, 255, 1)
         Width: =496
         X: =68
         Y: =722
@@ -97,7 +85,7 @@ Teacher As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(3, 121, 137, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =80
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
         OnSelect: |
@@ -111,8 +99,38 @@ Teacher As screen:
             )
         Size: =24
         Text: ="Place Request"
-        Width: =280
-        X: =176
-        Y: =900
+        Width: =496
+        X: =68
+        Y: =890
         ZIndex: =8
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Fill: =RGBA(3, 121, 137, 1)
+        Width: =639
+        ZIndex: =9
+
+    Label9_1 As label:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =60
+        Size: =28
+        Text: =teacherLookup.name
+        Width: =126
+        X: =93
+        Y: =13
+        ZIndex: =10
+
+    Icon6_1 As icon.Hamburger:
+        BorderColor: =RGBA(69, 186, 184, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Width: =32
+        X: =26
+        Y: =16
+        ZIndex: =11
 
