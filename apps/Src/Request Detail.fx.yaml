@@ -372,22 +372,22 @@
         Height: =77
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(3, 121, 137, 1), -20%)
-        OnSelect: |-
+        OnSelect: |
             =Set(
                 supplyLookup,
-                LookUp(Supplies, sid = RequestGallery.Selected.Supplies.sid)
+                LookUp(Supplies, sid = selectedRequest.Supplies.sid)
             );
             UpdateContext(
                 {
-                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
-                    quan: supplyLookup.quantity - RequestGallery.Selected.ReqQuantity
+                    isApproved: LookUp(Requests, ReqName = selectedRequest.ReqName),
+                    quan: supplyLookup.quantity - selectedRequest.ReqQuantity
                 }
             );
             If(isApproved.ReqStatus = "Pending",
                 If(quan >= 0,
                     Patch(
                         Requests,
-                        LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                        LookUp(Requests, ReqName = selectedRequest.ReqName),
                         {
                             Admin: adminRecord,
                             ReqStatus: "Approved"
@@ -399,19 +399,14 @@
                         {
                             quantity: quan
                         }
-                    ),
-                    Patch(
-                        Requests,
-                        LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
-                        {
-                            Admin: adminRecord
-                        }
                     );
-                    Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error)
+                    Navigate('success approval', ScreenTransition.None, {msg: "Request Accepted"}),
+                    Notify("The request can't be approved since quantitiy is not enough",NotificationType.Error);
+                    Navigate('failed approval', ScreenTransition.None, {msg: "Quantity not enough"})
                 ),
-                Notify("The status of request is not pending", NotificationType.Error)
+                Notify("The status of request is not pending", NotificationType.Error);
+                Navigate('failed approval', ScreenTransition.None, {msg: "The request status is not pending"})
             );
-            (isApproved.ReqStatus = "Pending") && Navigate('success approval', ScreenTransition.None,{msg: "Request Accepted"})
         Size: =24
         Text: ="Approve"
         Width: =527
@@ -432,21 +427,22 @@
         OnSelect: |-
             =UpdateContext(
                 {
-                    isApproved: LookUp(Requests, ReqName = RequestGallery.Selected.ReqName)
+                    isApproved: LookUp(Requests, ReqName = selectedRequest.ReqName)
                 }
             );
             If(isApproved.ReqStatus = "Pending",
                 Patch(
                     Requests,
-                    LookUp(Requests, ReqName = RequestGallery.Selected.ReqName),
+                    LookUp(Requests, ReqName = selectedRequest.ReqName),
                     {
                         Admin: adminRecord,
                         ReqStatus: "Rejected"
                     }
-                ),
-                Notify("The status of request is not pending",NotificationType.Error)
+                );
+                Navigate('success approval', ScreenTransition.None, {msg: "Rejected Successfully"}),
+                Notify("The status of request is not pending",NotificationType.Error);
+                Navigate('failed approval', ScreenTransition.None, {msg: "The request status is not pending"})
             );
-            (isApproved.ReqStatus = "Pending") && Navigate('failed approval', ScreenTransition.None)
         Size: =24
         Text: |-
             ="Reject
